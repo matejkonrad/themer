@@ -1,0 +1,24 @@
+
+<%= form_for @landing, class: 'form-horizontal' do |f| %>
+  <div class="form-group">
+    <label for="name">Name</label>
+    <%= f.text_field :name, class: 'form-control'%>
+  </div>
+
+  <div class="form-group">
+    <label for="domain_name">domain_name</label>
+    <%= f.text_field :domain_name, class: 'form-control'%>
+  </div>
+
+  <div class="form-group">
+  <label for="landing_code">landing_code</label>
+    <%= f.text_field :landing_code, class: 'form-control'%>
+  </div>
+
+  <div class="form-group">
+    <label for="user_id">user_id</label>
+    <%= f.text_field :user_id, class: 'form-control'%>
+  </div>
+
+  <%= f.submit "Submit landing", class: 'btn btn-default'%>
+<% end %>
